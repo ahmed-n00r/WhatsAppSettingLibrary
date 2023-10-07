@@ -1,0 +1,6 @@
+﻿* You must have a Meta or Facebook business account.
+* In program.cs add the code below
+ {{
+	builder.Services.Configure<WhatsAppSetting>(builder.Configuration.GetSection(nameof(WhatsAppSetting)));
+	builder.Services.AddScoped<IWhatsAppService, WhatsAppService>();
+ }}.
